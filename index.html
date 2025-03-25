@@ -30,20 +30,19 @@
     <style>
       .prayer-times-container {
         display: flex;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
         padding: 20px 0;
-        margin: 0 -10px;
       }
       .prayer-time-card {
         background: #eaeaea;
         border-radius: 10px;
         padding: 20px;
-        margin: 10px;
         text-align: center;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        flex: 0 0 auto;
-        width: 200px; /* Fixed width for each card */
+        width: 200px;
         position: relative;
         overflow: hidden;
       }
@@ -173,6 +172,19 @@
       #donate p {
         font-size: 18px;
         margin-bottom: 30px;
+      }
+      
+      /* Mobile styles */
+      @media (max-width: 767.98px) {
+        .prayer-times-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .prayer-time-card {
+          width: 100%;
+          max-width: 300px;
+          margin-bottom: 15px;
+        }
       }
     </style>
   </head>
