@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
-    <meta charset="utf-8">
-    <title>IZB Mosque</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta charset="utf-8" />
+    <title>IZB Mosche</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="img/IZBLogo.ico" />
 
     <style>
       .prayer-times-container {
@@ -47,13 +60,17 @@
         overflow: hidden;
       }
       .prayer-time-card::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba(85, 128, 55, 0.8), rgba(58, 92, 40, 0.8));
+        background: linear-gradient(
+          135deg,
+          rgba(85, 128, 55, 0.8),
+          rgba(58, 92, 40, 0.8)
+        );
         opacity: 0;
         transition: opacity 0.3s ease;
         z-index: 1;
@@ -119,12 +136,12 @@
       .map-container {
         margin-top: 30px;
         overflow: hidden;
-        padding-bottom: 56.25%; 
+        padding-bottom: 56.25%;
         position: relative;
         height: 0;
         border-radius: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      } 
+      }
       .map-container iframe {
         left: 0;
         top: 0;
@@ -147,7 +164,7 @@
       }
       .directions-btn:hover {
         background-color: #2980b9;
-      } 
+      }
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -160,7 +177,7 @@
       }
       .fade-in {
         animation: fadeIn 1s ease-out;
-      } 
+      }
       #donate {
         background-color: #f8f9fa;
         padding: 50px 0;
@@ -173,7 +190,7 @@
         font-size: 18px;
         margin-bottom: 30px;
       }
-      
+
       /* Mobile styles */
       @media (max-width: 767.98px) {
         .prayer-times-container {
@@ -190,65 +207,79 @@
   </head>
 
   <body>
-
     <!-- Spinner Start -->
-    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
       <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
     <!-- Topbar start -->
     <div class="container-fluid fixed-top">
-        <!-- Topbar - Now visible on all devices -->
-        <div class="container topbar">
-          <div class="topbar-inner">
-            <div class="row gx-0 align-items-center">
-              <!-- Phone & Email - Always visible -->
-              <div class="col-md-7 col-12">
-                <div class="d-flex flex-wrap align-items-center">
-                  <div class="me-3 mb-1 mb-md-0">
-                    <span class="fa fa-phone-alt me-2 text-dark"></span>
-                    <a href="tel:+491744741572" class="phone-link">+49 174 4741572</a>
-                  </div>
-                  <div class="d-none d-md-block">
-                    <span class="far fa-envelope me-2 text-dark"></span>
-                    <a href="#" class="text-secondary"><span>info@example.com</span></a>
-                  </div>
+      <!-- Topbar - Now visible on all devices -->
+      <div class="container topbar">
+        <div class="topbar-inner">
+          <div class="row gx-0 align-items-center">
+            <!-- Phone & Email - Always visible -->
+            <div class="col-md-7 col-12">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="me-3 mb-1 mb-md-0">
+                  <span class="fa fa-phone-alt me-2 text-dark"></span>
+                  <a href="tel:+491744741572" class="phone-link"
+                    >+49 174 4741572</a
+                  >
                 </div>
               </div>
-              
-              <!-- Social Links - Hidden on mobile -->
-              <div class="col-md-5 d-none d-md-block text-end">
-                <div class="h-100 d-inline-flex align-items-center">
-                  <span class="text-body me-2">Follow Us:</span>
-                  <a class="text-dark px-2" href=""><i class="fab fa-facebook-f"></i></a>
-                  <a class="text-dark px-2" href=""><i class="fab fa-twitter"></i></a>
-                  <a class="text-dark px-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                  <a class="text-dark px-2" href=""><i class="fab fa-instagram"></i></a>
-                  <a class="text-body ps-4" href=""><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
-                </div>
+            </div>
+
+            <!-- Social Links - Hidden on mobile -->
+            <div class="col-md-5 d-none d-md-block text-end">
+              <div class="h-100 d-inline-flex align-items-center">
+                <span class="text-body me-2">Whatsapp Gruppe:</span>
+                <a class="text-dark px-2" href="img/whatsapp.jpg"
+                  ><i class="bi bi-whatsapp"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
+      </div>
       <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-3">
           <a href="index.html" class="navbar-brand">
-            <img style="width: 70px; height: 70px;" src="img/IZB.jpg" alt=""> 
+            <img style="width: 70px; height: 70px" src="img/IZB.jpg" alt="" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
             <span class="fa fa-bars text-primary"></span>
           </button>
+          <div id="home"></div>
+          
           <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
             <div class="navbar-nav ms-lg-auto mx-xl-auto">
-              <a href="#home" class="nav-item nav-link active">Home</a> 
-              <a href="#about" class="nav-item nav-link">About Us</a> 
-              <a href="#prayer-times" class="nav-item nav-link">Prayer Times</a> 
+              <a href="#home" class="nav-item nav-link ">Home</a>
+              <a href="#about" class="nav-item nav-link">Über Uns</a>
+              <a href="#prayer-times" class="nav-item nav-link">Gebetszeiten</a>
             </div>
-            <!-- Button to Trigger Modal -->
-            <button type="button" class="donation-button btn btn-primary" data-bs-toggle="modal" data-bs-target="#donationModal">
-              Donate Now
+
+            <!-- Donation Button -->
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#bankTransferModal"
+            >
+              Spende via Banküberweisung
             </button>
+
+            <!-- Bank Transfer Modal -->
           </div>
         </nav>
       </div>
@@ -261,9 +292,11 @@
         <div class="row">
           <div class="col-lg-7">
             <div class="hero-header-inner animated zoomIn">
-              <p class="fs-4 text-dark">WELCOME TO ISLAMISCHES ZENTRUM BURGHAUSEN</p>
-              <h1 class="display-1 mb-5 text-dark">Mosque In Burghausen</h1>
-              <a href="#location" class="btn btn-primary py-3 px-5">Location</a>
+              <p class="fs-4 text-dark">
+                ISLAMISCHES ZENTRUM BURGHAUSEN e.V. heißt Sie willkommen
+              </p>
+              <h1 class="display-1 mb-5 text-dark">Mosche in Burghausen</h1>
+              <a href="#location" class="btn btn-primary py-3 px-5">Standort</a>
             </div>
           </div>
         </div>
@@ -272,90 +305,63 @@
     <!-- Hero End -->
 
     <!-- About Start -->
+     <div id="about"></div><br><br>
     <div class="container-fluid about py-5">
       <div class="container py-5">
-        <div class="row g-5 mb-5">
+        <div class="row g-5 mb-5 ">
           <div class="col-xl-6">
             <div class="row g-4">
               <div class="col-6">
-                <img src="img/about-1.jpg" class="img-fluid h-100 wow zoomIn" data-wow-delay="0.1s" alt="">
+                <img
+                  src="img/IZBold2.jpg"
+                  class="img-fluid w-100 h-75 wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                />
               </div>
-              <div class="col-6">
-                <img src="img/about-2.jpg" class="img-fluid pb-3 wow zoomIn" data-wow-delay="0.1s" alt="">
-                <img src="img/about-3.jpg" class="img-fluid pt-3 wow zoomIn" data-wow-delay="0.1s" alt="">
+              <div class="col-3">
+                <img
+                  src="img/IZBold1.jpg"
+                  class="img-fluid pb-3  wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                />
+                <img
+                  src="img/IZBold3.jpg"
+                  class="img-fluid pt-3  wow zoomIn"
+                  data-wow-delay="0.1s"
+                  alt=""
+                />
               </div>
             </div>
           </div>
           <div class="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
             <p class="fs-5 text-uppercase text-primary">About THEMosque</p>
-            <h1 class="display-5 pb-4 m-0">Allah Help Those Who Help Themselves</h1>
-            <p class="pb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam. Etiam quis mauris justo. Vivamus purus nulla, rutrum ac risus in.</p>
-            <div class="row g-4 mb-4">
-              <div class="col-md-6">
-                <div class="ps-3 d-flex align-items-center justify-content-start">
-                  <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i class="fa fa-eye text-dark fa-4x mb-5 pb-2"></i></span>
-                  <div class="ms-4">
-                    <h5>Our Vision</h5>
-                    <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="ps-3 d-flex align-items-center justify-content-start">
-                  <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i class="fa fa-flag text-dark fa-4x mb-5 pb-2"></i></span>
-                  <div class="ms-4">
-                    <h5>Our Mission</h5>
-                    <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bg-light p-3 mb-4">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-3">
-                  <img src="img/about-child.jpg" class="img-fluid rounded-circle" alt="">
-                </div>
-                <div class="col-6">
-                  <p class="mb-0">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam. Etiam quis mauris justo.</p>
-                </div>
-                <div class="col-3">
-                  <h2 class="mb-0 text-primary text-center">$20,46</h2>
-                  <h5 class="mb-0 text-center">Raised</h5>
-                </div>
-              </div>
-            </div>
-            <div class="row g-2">
-              <div class="col-md-6">
-                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Charity & Donation</p>
-                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Parent Education</p>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Hadith & Sunnah</p>
-                <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Mosque Development</p>
-              </div>
-            </div>
+            <h1 class="display-5 pb-4 m-0">
+              Allah Help Those Who Help Themselves
+            </h1>
+            <p class="pb-4">
+              Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+              mattis aliquam. Etiam quis mauris justo. Vivamus purus nulla,
+              rutrum ac risus in.
+            </p>
+            
           </div>
         </div>
-        <div class="container text-center bg-primary py-5 wow fadeIn" data-wow-delay="0.1s">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-2">
-              <i class="fa fa-mosque fa-5x text-white"></i>
-            </div>
-            <div class="col-lg-7 text-center text-lg-start">
-              <h1 class="mb-0">Every Muslim Needs To Realise The Importance Of The "Pillar" Of Islam</h1>
-            </div>
-            <div class="col-lg-3">
-              <a href="" class="btn btn-light py-2 px-4">Learn More</a>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     <!-- About End -->
 
     <!-- Prayer Times Section -->
-    <div id="prayer-times" class="container my-5 text-center py-2" style="background: #eaeaea;">
-      <h1 style="color:#558037;">Prayer Time</h1>
+     <div id="prayer-times"></div>
+     <br><br><br>
+    <div
+      
+      class="container my-5 text-center py-2"
+      style="background: #eaeaea"
+    >
+      <h1 style="color: #558037">Gebetszeiten</h1>
     </div>
     <div class="container my-5">
       <div class="prayer-times-container" id="prayer-times-container">
@@ -367,7 +373,11 @@
     <!-- Activities Start -->
     <div class="container-fluid activities py-5">
       <div class="container py-5">
-        <div class="mx-auto text-center mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+        <div
+          class="mx-auto text-center mb-5 wow fadeIn"
+          data-wow-delay="0.1s"
+          style="max-width: 700px"
+        >
           <p class="fs-5 text-uppercase text-primary">Activities</p>
           <h1 class="display-3">Here Are Our Activities</h1>
         </div>
@@ -377,7 +387,10 @@
               <i class="fa fa-mosque fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Mosque Development</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -387,7 +400,10 @@
               <i class="fa fa-donate fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Charity & Donation</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -397,7 +413,10 @@
               <i class="fa fa-quran fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Quran Learning</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -407,7 +426,10 @@
               <i class="fa fa-book fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Hadith & Sunnah</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -417,7 +439,10 @@
               <i class="fa fa-book-open fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Parent Education</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -427,7 +452,10 @@
               <i class="fa fa-hands fa-4x text-dark"></i>
               <div class="ms-4">
                 <h4>Help Orphans</h4>
-                <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+                <p class="mb-4">
+                  Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor
+                  mattis aliquam.
+                </p>
                 <a href="" class="btn btn-primary px-3">Read More</a>
               </div>
             </div>
@@ -439,22 +467,30 @@
 
     <!-- Location Start -->
     <div class="container fade-in" id="location">
-      <div class="container text-center py-2" style="background: #eaeaea; margin-bottom: 100px;">
-        <h1 style="color: #558037;">Location</h1>
+      <div
+        class="container text-center py-2"
+        style="background: #eaeaea; margin-bottom: 100px"
+      >
+        <h1 style="color: #558037">Standort</h1>
       </div>
       <h1 class="text-center">Visit Us</h1>
       <div class="address text-center">
-        <strong>Address:</strong> Unghauser Straße 11, 84489 Burghausen
+        <strong>Adresse:</strong> Unghauser Straße 11, 84489 Burghausen
       </div>
       <div class="map-container text-center">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.698278018543!2d12.827251315626952!3d48.16922297913802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774a1b3b0f5f5b5%3A0x1b8e5b0b0b0b0b0b!2sUnghauser%20Straße%2011%2C%2084489%20Burghausen!5e0!3m2!1sde!2sde!4v1698765432105!5m2!1sde!2sde" 
-          allowfullscreen="" 
-          loading="lazy">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.698278018543!2d12.827251315626952!3d48.16922297913802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774a1b3b0f5f5b5%3A0x1b8e5b0b0b0b0b0b!2sUnghauser%20Straße%2011%2C%2084489%20Burghausen!5e0!3m2!1sde!2sde!4v1698765432105!5m2!1sde!2sde"
+          allowfullscreen=""
+          loading="lazy"
+        >
         </iframe>
       </div>
-      <div style="text-align: center;">
-        <a href="https://www.google.com/maps/dir//Unghauser+Straße+11,+84489+Burghausen" target="_blank" class="directions-btn">
+      <div style="text-align: center">
+        <a
+          href="https://www.google.com/maps/dir//Unghauser+Straße+11,+84489+Burghausen"
+          target="_blank"
+          class="directions-btn"
+        >
           Plan Route
         </a>
       </div>
@@ -464,84 +500,68 @@
     <!-- Footer Start -->
     <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container py-5">
-        <div class="row py-5">
-          <div class="col-lg-7">
-            <h1 class="text-light mb-0">Subscribe our newsletter</h1>
-            <p class="text-secondary">Get the latest news and other tips</p>
-          </div>
-          <div class="col-12">
-            <div class="border-top border-secondary"></div>
-          </div>
-        </div>
         <div class="row g-4 footer-inner">
-          <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="col-md-6 col-lg-6 col-xl-6">
             <div class="footer-item mt-5">
-              <h4 class="text-light mb-4">THE<span class="text-primary">Mosque</span></h4>
-              <p class="mb-4 text-secondary">Nostrud exertation ullamco labor nisi aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-              <a href="" class="btn btn-primary py-2 px-4">Donate Now</a>
+              <h4 class="text-light mb-4">
+                IZB<span class="text-primary">Mosche</span>
+              </h4>
+              <p class="mb-4 text-secondary">
+                Nostrud exertation ullamco labor nisi aliquip ex ea commodo
+                consequat duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore.
+              </p>
+              <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#bankTransferModal"
+            >
+            Spende via Banküberweisung
+            </button>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="col-md-6 col-lg-6 col-xl-6">
             <div class="footer-item mt-5">
-              <h4 class="text-light mb-4">Our Mosque</h4>
+              <h4 class="text-light mb-4">Unsere Mosche</h4>
               <div class="d-flex flex-column">
-                <h6 class="text-secondary mb-0">Our Address</h6>
+                <h6 class="text-secondary mb-0">Unsere Adresse</h6>
                 <div class="d-flex align-items-center border-bottom py-4">
-                  <span class="flex-shrink-0 btn-square bg-primary me-3 p-4"><i class="fa fa-map-marker-alt text-dark"></i></span>
-                  <a href="" class="text-body">123 Street, New York, USA</a>
+                  <span class="flex-shrink-0 btn-square bg-primary me-3 p-4"
+                    ><i class="fa fa-map-marker-alt text-dark"></i
+                  ></span>
+                  <a
+                    href="https://www.google.com/maps/dir//Unghauser+Straße+11,+84489+Burghausen"
+                    target="_blank"
+                  >
+                    Unghauser Straße 11, 84489 Burghausen</a
+                  >
                 </div>
-                <h6 class="text-secondary mt-4 mb-0">Our Mobile</h6>
+                <h6 class="text-secondary mt-4 mb-0"> Telefonnummer</h6>
                 <div class="d-flex align-items-center py-4">
-                  <span class="flex-shrink-0 btn-square bg-primary me-3 p-4"><i class="fa fa-phone-alt text-dark"></i></span>
-                  <a href="" class="text-body">+012 345 67890</a>
+                  <span class="flex-shrink-0 btn-square bg-primary me-3 p-4"
+                    ><i class="fa fa-phone-alt text-dark"></i
+                  ></span>
+                  <a href="tel:+491744741572" class="phone-link"
+                    >+49 174 4741572</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="footer-item mt-5">
-              <h4 class="text-light mb-4">Explore Link</h4>
-              <div class="d-flex flex-column align-items-start">
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Home</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>About Us</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Our Features</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Contact us</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Our Blog</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Our Events</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Donations</a>
-                <a class="text-body mb-2" href=""><i class="fa fa-check text-primary me-2"></i>Sermons</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-3">
-            <div class="footer-item mt-5">
-              <h4 class="text-light mb-4">Latest Post</h4>
-              <div class="d-flex border-bottom border-secondary py-4">
-                <img src="img/blog-mini-1.jpg" class="img-fluid flex-shrink-0" alt="">
-                <div class="ps-3">
-                  <p class="mb-0 text-muted">01 Jan 2045</p>
-                  <a href="" class="text-body">Lorem ipsum dolor sit amet elit eros vel</a>
-                </div>
-              </div>
-              <div class="d-flex py-4">
-                <img src="img/blog-mini-2.jpg" class="img-fluid flex-shrink-0" alt="">
-                <div class="ps-3">
-                  <p class="mb-0 text-muted">01 Jan 2045</p>
-                  <a href="" class="text-body">Lorem ipsum dolor sit amet elit eros vel</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div class="container py-4">
         <div class="border-top border-secondary pb-4"></div>
         <div class="row">
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+            Right Reserved.
           </div>
           <div class="col-md-6 text-center text-md-end">
-            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+            Designed By
+            <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
           </div>
         </div>
       </div>
@@ -549,20 +569,49 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-3 border-light back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    <a href="#" class="btn btn-primary border-3 border-light back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
 
     <!-- Donation Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="bankTransferModal"
+      tabindex="-1"
+      aria-labelledby="bankTransferModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="donationModalLabel">Choose Donation Method</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="bankTransferModalLabel">
+              Bank Info
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            <a href="https://www.paypal.com/donate" class="btn btn-primary mb-2">Donate with PayPal</a>
-            <a href="https://buy.stripe.com/your-payment-link" class="btn btn-success mb-2">Donate with Stripe</a>
-            <a href="https://www.launchgood.com/your-campaign-link" class="btn btn-info mb-2">Donate with LaunchGood</a>
+            <p>Please use the following details to make a bank transfer:</p>
+            <ul class="list-unstyled">
+              <li><strong>Kontoinhaber:</strong> IZB e.V. </li>
+              <li><strong>IBAN:</strong>DE57 7115 1020 0031 8083 63</li>
+              <li><strong>BIC/SWIFT:</strong> BYLADEM1MDF</li>
+              <li><strong>Verwendungszweck:</strong> Spende</li>
+            </ul>
+            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -599,15 +648,17 @@
             { name: "Asr", icon: "fas fa-cloud-sun", time: timings.Asr },
             { name: "Maghrib", icon: "fas fa-moon", time: timings.Maghrib },
             { name: "Isha", icon: "fas fa-star", time: timings.Isha },
-            { name: "Jumu'ah", icon: "fas fa-users", time: "13:15" }
+            { name: "Jumu'ah", icon: "fas fa-users", time: "13:15" },
           ];
 
-          prayers.forEach(prayer => {
+          prayers.forEach((prayer) => {
             const card = `
               <div class="prayer-time-card">
                 <i class="${prayer.icon} icon"></i>
                 <h2>${prayer.name}</h2>
-                <p>${prayer.name === "Jumu'ah" ? "Friday Prayer" : prayer.name}</p>
+                <p>${
+                  prayer.name === "Jumu'ah" ? "Friday Prayer" : prayer.name
+                }</p>
                 <p class="time">${prayer.time}</p>
               </div>
             `;
