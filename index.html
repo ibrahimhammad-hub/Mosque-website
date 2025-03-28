@@ -203,10 +203,47 @@
           margin-bottom: 15px;
         }
       }
+      .topbar {
+        font-size: 0.9rem;
+        border-bottom: 1px solid #eee;
+      }
+      
+      /* WhatsApp button styling */
+      .btn-success {
+        background-color: #6CAE48;
+        border-color: #6CAE48;
+        padding: 0.25rem 0.5rem;
+      }
+      .btn-success:hover {
+        background-color: #558037;
+        border-color: #558037;
+      }
+      
+      /* Phone link styling */
+      .phone-link {
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .phone-link:hover {
+        text-decoration: underline;
+      }
+      
+      /* Mobile adjustments */
+      @media (max-width: 575.98px) {
+        .topbar {
+          padding: 0.3rem 0;
+          font-size: 0.8rem;
+        }
+        .btn-success {
+          font-size: 0.8rem;
+          padding: 0.2rem 0.4rem;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <div id="home"> </div>
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -223,7 +260,7 @@
         <div class="topbar-inner">
           <div class="row gx-0 align-items-center">
             <!-- Phone & Email - Always visible -->
-            <div class="col-md-7 col-12">
+            <div class="col-6">
               <div class="d-flex flex-wrap align-items-center">
                 <div class="me-3 mb-1 mb-md-0">
                   <span class="fa fa-phone-alt me-2 text-dark"></span>
@@ -235,13 +272,12 @@
             </div>
 
             <!-- Social Links - Hidden on mobile -->
-            <div class="col-md-5 d-none d-md-block text-end">
-              <div class="h-100 d-inline-flex align-items-center">
-                <span class="text-body me-2">Whatsapp Gruppe:</span>
-                <a class="text-dark px-2" href="img/whatsapp.jpg"
-                  ><i class="bi bi-whatsapp"></i
-                ></a>
-              </div>
+            <div class="col-6 text-end">
+              <a href="img/whatsapp.jpg" class="btn btn-success btn-sm" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+                <span class="d-none d-sm-inline"> WhatsApp Gruppe</span>
+                <span class="d-inline d-sm-none"> Gruppe</span>
+              </a>
             </div>
           </div>
         </div>
@@ -259,11 +295,11 @@
           >
             <span class="fa fa-bars text-primary"></span>
           </button>
-          <div id="home"></div>
           
-          <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+          
+          <div class="collapse navbar-collapse bg-white " id="navbarCollapse">
             <div class="navbar-nav ms-lg-auto mx-xl-auto">
-              <a href="#home" class="nav-item nav-link ">Home</a>
+              <a href="#home" class="nav-item nav-link active">Home</a>
               <a href="#about" class="nav-item nav-link">Über Uns</a>
               <a href="#prayer-times" class="nav-item nav-link">Gebetszeiten</a>
             </div>
